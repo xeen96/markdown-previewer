@@ -1,20 +1,18 @@
 import React from "react";
 
-const TextEditor = ({ content, setContent }) => {
-  const handleChange = (e) => {
-    setContent(e.target.value); // Обновляем состояние в родительском компоненте
-  };
+const TextEditor = ({ title, content, onChange }) => {
 
   return (
     <>
       <div className="toolbar">
-        <p>Title placeholder</p>
+        <p>{title}</p>
       </div>
       <textarea
-      id="editor"
-      type="text"
-      value={content} 
-      onChange={handleChange}>
+        id="editor"
+        type="text"
+        value={content}
+        onChange={onChange}
+      >
       </textarea>
     </>
   )

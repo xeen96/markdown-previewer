@@ -1,9 +1,41 @@
 * {
-  margin :0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.col-11 {
-    background-color:cadetblue;
+.col-10 {
+  background-color: cadetblue;
+
+}
+.col-2 {
+  background-color: rgb(56, 63, 63);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Настройка скроллбара */
+/* Стили для контейнера */
+.scrollable {
+  overflow: auto;
+  /* Включаем возможность прокрутки */
+  position: relative;
+  /* Обеспечиваем позиционирование для скроллбара */
+}
+
+/* Настройка скроллбара */
+.scrollable::-webkit-scrollbar {
+  width: 5px;
+  /* Ширина скроллбара */
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: rgb(56, 63, 63);
+  border-radius: 10px;
+  /* Радиус скругления */
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  /* Цвет фона за скроллбаром */
 }

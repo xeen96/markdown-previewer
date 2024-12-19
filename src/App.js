@@ -5,9 +5,10 @@ import ContentBox from './components/content-box/contentBox';
 import { DocumentProvider } from './context/documentContext';
 
 function App() {
+
   return (
     <DocumentProvider>
-      <div className="App vh-100">
+      <div className="App vh-100 scrollable">
         <div className="container-fluid h-100">
           <div className="row h-100">
             <NavBar />

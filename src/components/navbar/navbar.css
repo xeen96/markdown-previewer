@@ -1,0 +1,23 @@
+.document {
+  padding: 10px;
+  margin: 10px;
+  background-color:#90e2e5;
+  margin-bottom: 10px;
+  width: 90%;
+  border-radius: 10px;
+  border-width: 10px;
+  text-align: center;
+}
+.document:hover {
+  opacity: 0.9;
+}
+.btn {
+  padding: 3px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color:#ff5877;
+  margin-bottom: 10px;
+  width: 90%;
+  border-width: 10px;
+  text-align: center;
+}

@@ -8,6 +8,7 @@
   margin: 20px;
 }
 .previewWrap {
+  text-align: left;
   display:  flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -21,11 +22,14 @@
   border-radius: 5px;
   margin-top: 30px;
   width: 80%;
-  background-color: #f4f4f4; /* Задний фон для наглядности */
-  padding: 5px;
+  background-color: #f4f4f4; 
+  padding: 10px;
+  font-family: monospace;
+  font-weight: 500;
 }
 
 #editor {
+  outline: none;
   font-family: monospace;
   color: rgb(215, 215, 215);
   background-color: rgb(56, 63, 63);
@@ -34,17 +38,65 @@
   min-height: 125px;
   height: 125px;
   resize: vertical;
-  overflow:auto; /* Добавляем прокрутку, если содержимое выходит за пределы */
+  overflow:auto; 
 }
 
 #preview {
-  font-family: monospace;
+  font-family: 'Arial', 'Helvetica', sans-serif;
   color: rgb(215, 215, 215);
   background-color: rgb(56, 63, 63);
   padding: 1em;
-  white-space: pre-wrap; /* Сохраняет пробелы и переносы строк */
-  overflow-wrap: break-word;
+  overflow-wrap:break-word;
+  overflow: hidden;
   width: 80%;
   min-height: 125px;
   height: auto;
+}
+
+#preview table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#preview th, #preview td {
+  color: rgb(215, 215, 215);
+  border: 1px solid  rgb(215, 215, 215);
+  padding: 8px;
+  text-align: left;
+}
+
+#preview th {
+  background-color: rgb(32, 32, 32);
+}
+
+#preview img {
+  max-width: 60%;
+  height: auto;
+}
+
+#preview pre {
+  color: rgb(100, 60, 255);
+  background-color: rgb(215, 215, 215);
+  padding: 10px;
+  border-radius: 5px;
+  white-space: pre-wrap; 
+  word-wrap: break-word;
+  overflow-x: auto;
+}
+
+#preview code {
+  font-family: monospace;
+  font-size: 1rem;
+}
+
+#preview blockquote {
+  background-color: rgb(33, 37, 37);
+  border-left: 5px solid rgb(215, 215, 215);
+  padding: 10px 20px;       
+  margin: 20px 0;         
+  color: rgb(215, 215, 215);          
+}
+
+#preview blockquote p {
+  margin: 0;       
 }
