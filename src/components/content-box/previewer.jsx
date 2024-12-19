@@ -1,7 +1,7 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import remarkBreaks from "remark-breaks";
-import remarkGfm from "remark-gfm"; // Импортируем плагин для GFM
+import remarkGfm from "remark-gfm";
 
 const Previewer = ({ content }) => {
   return (

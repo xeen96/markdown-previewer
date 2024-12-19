@@ -14,28 +14,21 @@
   align-items: center;
 }
 
-/* Настройка скроллбара */
-/* Стили для контейнера */
+
 .scrollable {
   overflow: auto;
-  /* Включаем возможность прокрутки */
   position: relative;
-  /* Обеспечиваем позиционирование для скроллбара */
 }
 
-/* Настройка скроллбара */
 .scrollable::-webkit-scrollbar {
-  width: 5px;
-  /* Ширина скроллбара */
+  width: 7px;
 }
 
 .scrollable::-webkit-scrollbar-thumb {
   background-color: rgb(56, 63, 63);
   border-radius: 10px;
-  /* Радиус скругления */
 }
 
 .scrollable::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.1);
-  /* Цвет фона за скроллбаром */
 }

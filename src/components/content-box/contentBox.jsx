@@ -6,7 +6,7 @@ import { documentContext } from "../../context/documentContext";
 
 const ContentBox = () => {
   const { currentDocument, updateCurrentDocument } = useContext(documentContext);
-  const {content, title} = currentDocument;
+  const { content, title } = currentDocument;
 
   const handleChangeContent = (e) => {
     updateCurrentDocument(e.target.value);

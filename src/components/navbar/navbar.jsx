@@ -14,11 +14,11 @@ export const NavBar = () => {
               className="document"
               onClick={() => selectDocument(doc.id)}
             >
-              <p>{doc.id}</p>
+              <p>{doc.title}</p>
             </div>
           ))}
         <button onClick={createNewDocument} className="btn">
-          Create new...
+          Create new document...
         </button>
       </div>
     </div>

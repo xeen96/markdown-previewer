@@ -3,8 +3,8 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  flex-grow: 1; /* Растягивается, если нужно больше места */
-  overflow: hidden; /* Отключаем прокрутку */
+  flex-grow: 1; 
+  overflow: hidden; 
   margin: 20px;
 }
 .previewWrap {
@@ -13,8 +13,8 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  flex-grow: 1; /* Растягивается, если нужно больше места */
-  overflow: hidden; /* Отключаем прокрутку */
+  flex-grow: 1; 
+  overflow: hidden; 
   margin: 20px;
 }
 .toolbar {
