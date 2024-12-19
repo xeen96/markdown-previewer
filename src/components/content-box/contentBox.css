@@ -1,0 +1,50 @@
+.editorWrap {
+  display:  flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-grow: 1; /* Растягивается, если нужно больше места */
+  overflow: hidden; /* Отключаем прокрутку */
+  margin: 20px;
+}
+.previewWrap {
+  display:  flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-grow: 1; /* Растягивается, если нужно больше места */
+  overflow: hidden; /* Отключаем прокрутку */
+  margin: 20px;
+}
+.toolbar {
+  max-height: 40px;
+  border-radius: 5px;
+  margin-top: 30px;
+  width: 80%;
+  background-color: #f4f4f4; /* Задний фон для наглядности */
+  padding: 5px;
+}
+
+#editor {
+  font-family: monospace;
+  color: rgb(215, 215, 215);
+  background-color: rgb(56, 63, 63);
+  padding: 1em;
+  width: 80%;
+  min-height: 125px;
+  height: 125px;
+  resize: vertical;
+  overflow:auto; /* Добавляем прокрутку, если содержимое выходит за пределы */
+}
+
+#preview {
+  font-family: monospace;
+  color: rgb(215, 215, 215);
+  background-color: rgb(56, 63, 63);
+  padding: 1em;
+  white-space: pre-wrap; /* Сохраняет пробелы и переносы строк */
+  overflow-wrap: break-word;
+  width: 80%;
+  min-height: 125px;
+  height: auto;
+}
